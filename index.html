@@ -587,10 +587,44 @@ dialog{
   footer{font-size:14px}
 }
 
+
+.hero-text-link{
+  align-self:center;
+  border:0;
+  background:transparent;
+  color:#1754b6;
+  padding:8px 4px;
+  font-size:15px;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.hero-text-link:hover{color:#08764f}
+.hero .button.database-link{
+  background:#eef9f4;
+  color:#075e40;
+  border-color:#8bbba7;
+}
+.hero .button.database-link:hover{
+  background:#dff3e9;
+  color:#06442f;
+}
+@media(max-width:600px){
+  .hero-focus .actions{grid-template-columns:1fr 1fr}
+  .hero-focus .actions .hero-text-link{
+    grid-column:1 / -1;
+    justify-self:start;
+    width:auto;
+    min-height:0;
+    padding:4px 0;
+    text-align:left;
+  }
+}
+
 </style></head>
 <body><a class="skip" href="#main">跳到主要內容</a>
 <header><div class="wrap bar"><a class="brand" href="#top"><span class="mark" aria-hidden="true">▶</span>資教&兒美協會老師・短影音手冊</a><nav aria-label="主要導覽"><a class="nav-priority" href="#checklist">★ 老師拍攝清單</a><a href="#method">拍攝方法</a><a href="#courses">課程範例</a><a href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="上傳短影片（另開分頁）">上傳短影片 ↗</a></nav></div></header>
-<main id="main"><div class="wrap" id="top"><div class="hero hero-focus"><div><h1>老師手機拍攝清單</h1><p class="lead">每堂課，照著拍就好。<br>拍下「老師教什麼、孩子怎麼做、最後做出什麼」，<strong>協會負責後製剪輯。</strong></p><p class="capture-specs"><span>手機直式拍攝・每堂課 3–5 段</span><span>每段不超過 20 秒</span></p><div class="actions"><a href="#checklist" class="button">開始勾選拍攝清單 ↓</a><button class="button secondary" id="open-quick">開啟手機截圖版</button><a class="button database-link" href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="上傳短影片（另開分頁）">上傳短影片 ↗</a></div></div><aside class="example-video" aria-labelledby="example-video-title"><h2 id="example-video-title">範例影片</h2><div class="video-frame"><video controls playsinline preload="metadata" aria-label="喵星人麥塊宣傳影片範例"><source src="./%E5%96%B5%E6%98%9F%E4%BA%BA-%E9%BA%A5%E5%A1%8A%E5%AE%A3%E5%82%B3%E5%BD%B1%E7%89%87_720p.mp4" type="video/mp4">您的瀏覽器不支援 HTML5 影片播放。</video></div><p>YouTube 參考：<a href="https://www.youtube.com/shorts/88fvLnBDJ3Y" target="_blank" rel="noopener noreferrer">短影音範例連結 ↗</a></p></aside></div>
+<main id="main"><div class="wrap" id="top"><div class="hero hero-focus"><div><h1>老師手機拍攝清單</h1><p class="lead">每堂課，照著拍就好。<br>拍下「老師教什麼、孩子怎麼做、最後做出什麼」，<strong>協會負責後製剪輯。</strong></p><p class="capture-specs"><span>手機直式拍攝・每堂課 3–5 段</span><span>每段不超過 20 秒</span></p><div class="actions"><a href="#checklist" class="button">開始拍攝清單 ↓</a><a class="button database-link" href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="上傳短影片（另開分頁）">上傳短影片 ↗</a><button class="hero-text-link" id="open-quick">開啟手機截圖版</button></div></div><aside class="example-video" aria-labelledby="example-video-title"><h2 id="example-video-title">範例影片</h2><div class="video-frame"><video controls playsinline preload="metadata" aria-label="喵星人麥塊宣傳影片範例"><source src="./%E5%96%B5%E6%98%9F%E4%BA%BA-%E9%BA%A5%E5%A1%8A%E5%AE%A3%E5%82%B3%E5%BD%B1%E7%89%87_720p.mp4" type="video/mp4">您的瀏覽器不支援 HTML5 影片播放。</video></div><p>YouTube 參考：<a href="https://www.youtube.com/shorts/88fvLnBDJ3Y" target="_blank" rel="noopener noreferrer">短影音範例連結 ↗</a></p></aside></div>
 <section id="checklist"><div class="section-head"><div><span class="eyebrow">重點工具｜老師手機拍攝清單</span><h2>上課前打開，拍完就勾選。</h2></div><button class="button secondary" id="open-quick-2">開啟截圖一頁版 ↗</button></div>
 <div class="two-col"><div class="check-card"><div class="check-header"><h3>這堂課的素材</h3><span class="progress-text" id="progress-text" aria-live="polite">已完成 0 / 8</span></div><progress id="progress" max="8" value="0" aria-label="素材收集進度"></progress><label class="check"><input type="checkbox" data-check="0">直式 9:16、1080p，鏡頭擦乾淨</label><label class="check"><input type="checkbox" data-check="1">老師示範：拍到今天的一個重點</label><label class="check"><input type="checkbox" data-check="2">孩子操作：手與螢幕一起入鏡</label><label class="check"><input type="checkbox" data-check="3">關鍵動作：拖積木／選圖／按執行</label><label class="check"><input type="checkbox" data-check="4">思考過程：討論、嘗試或修改</label><label class="check"><input type="checkbox" data-check="5">成果畫面：實際運作或完成任務</label><label class="check"><input type="checkbox" data-check="6">確認畫面清楚、聲音可辨識</label><label class="check"><input type="checkbox" data-check="7">原始檔已整理，附上課程說明</label></div>
 <div>
@@ -601,9 +635,9 @@ dialog{
 <div class="rule"><b>05</b><div><strong>讓孩子自然參與</strong><p>優先拍手部、背影與作品。可辨識學生或使用訪談前，確認校方與家長授權；避開姓名、帳號與私人訊息。</p></div></div>
 </div></div></section>
 <section id="method"><div class="section-head"><div><span class="eyebrow">補充一｜拍攝方法</span><h2>一堂課，收齊三種畫面。</h2><p>先選一個小任務，再拍下教學、操作與結果。老師負責收素材，後續由協會統一剪輯。</p></div></div><div class="grid3">
-<article class="card"><span class="step">① 教學示範</span><h3>老師教什麼</h3><span class="pill">建議 2 段</span><ul><li><b>拍什麼：</b>指向一個積木、示範一項功能，或出示一張圖卡。</li><li><b>怎麼拍：</b>老師的手勢＋螢幕／教材一起入鏡，鏡頭固定 5–10 秒。</li><li><b>收一句話：</b>「今天我們用＿＿，讓＿＿。」</li></ul><p class="small">讓觀眾知道今天的學習任務。</p></article>
-<article class="card"><span class="step">② 操作過程</span><h3>孩子怎麼做</h3><span class="pill">建議 3–5 段</span><ul><li><b>拍什麼：</b>拖積木、改數字、按執行、指圖卡、討論與修正。</li><li><b>怎麼拍：</b>從肩膀後方拍「手＋畫面」；每個動作各錄 5–15 秒。</li><li><b>多留一段：</b>發現問題 → 修改 → 再試一次。</li></ul><p class="small">讓觀眾看懂孩子正在做什麼。</p></article>
-<article class="card"><span class="step">③ 課堂成果</span><h3>最後做出什麼</h3><span class="pill">建議 1–3 段</span><ul><li><b>拍什麼：</b>動畫播放、機關運作、實際遊玩，或完成美語任務。</li><li><b>怎麼拍：</b>下課前留 1–2 分鐘；固定或慢移鏡頭，錄 5–15 秒。</li><li><b>收完整動作：</b>按下開始 → 畫面產生結果。</li></ul><p class="small">留下能看見成果的結尾。</p></article></div>
+<article class="card"><span class="step">① 教學示範</span><h3>老師教什麼</h3><span class="pill">至少 1 段</span><ul><li><b>拍什麼：</b>指向一個積木、示範一項功能，或出示一張圖卡。</li><li><b>怎麼拍：</b>老師的手勢＋螢幕／教材一起入鏡，鏡頭固定 5–10 秒。</li><li><b>收一句話：</b>「今天我們用＿＿，讓＿＿。」</li></ul><p class="small">讓觀眾知道今天的學習任務。</p></article>
+<article class="card"><span class="step">② 操作過程</span><h3>孩子怎麼做</h3><span class="pill">至少 1 段</span><ul><li><b>拍什麼：</b>拖積木、改數字、按執行、指圖卡、討論與修正。</li><li><b>怎麼拍：</b>從肩膀後方拍「手＋畫面」；每個動作各錄 5–15 秒。</li><li><b>多留一段：</b>發現問題 → 修改 → 再試一次。</li></ul><p class="small">讓觀眾看懂孩子正在做什麼。</p></article>
+<article class="card"><span class="step">③ 課堂成果</span><h3>最後做出什麼</h3><span class="pill">至少 1 段</span><ul><li><b>拍什麼：</b>動畫播放、機關運作、實際遊玩，或完成美語任務。</li><li><b>怎麼拍：</b>下課前留 1–2 分鐘；固定或慢移鏡頭，錄 5–15 秒。</li><li><b>收完整動作：</b>按下開始 → 畫面產生結果。</li></ul><p class="small">留下能看見成果的結尾。</p></article></div>
 </section></div>
 <div class="band"><section id="courses" class="wrap"><div class="section-head"><div><span class="eyebrow">補充二｜課程範例</span><h2>選擇課程，查看拍攝範例。</h2><p>一次顯示一門課程，切換上方課程名稱即可查看拍攝方式與成果範例。</p></div></div>
 <div class="filters" role="group" aria-label="選擇課程"><button class="filter" data-filter="esl" aria-pressed="true">美語 ESL</button><button class="filter" data-filter="minecraft" aria-pressed="false">Minecraft</button><button class="filter" data-filter="roblox" aria-pressed="false">Roblox</button><button class="filter" data-filter="scratchjr" aria-pressed="false">ScratchJr</button><button class="filter" data-filter="octostudio" aria-pressed="false">OctoStudio</button></div><div id="course-list"><details data-course="esl" open><summary><span>美語 ESL<small>V1｜What Can the Animals Do?</small></span></summary><div class="course-body"><div class="grid3"><div><h4>① 老師教什麼</h4><p>使用 V1「What Can the Animals Do?」單元，老師帶讀並搭配動作示範：「A dog can run.」「A duck can walk.」拍到動物、動作與完整句型。</p></div><div><h4>② 孩子怎麼做</h4><p>拍孩子看動物圖片、模仿 run／walk／hop 等動作，再跟著句型說出動物會做什麼；保留孩子跟讀、配對與動作反應。</p></div><div><h4>③ 最後做出什麼</h4><p>收一段孩子完整說出句型，例如：「A rabbit can hop and I can, too.」也可以拍孩子做出 hop 動作並完成口說。</p></div></div><div class="flow"><b>拍攝順序：</b>老師示範動物＋動作 → 孩子模仿與跟讀 → 完整說出句型<br><span class="muted">收音優先：靠近發聲者，讓動作與英文句子同時清楚入鏡。</span></div></div></details>
@@ -612,19 +646,15 @@ dialog{
 <details data-course="scratchjr" ><summary><span>ScratchJr<small>拖一拖積木，故事開始動起來</small></span></summary><div class="course-body"><div class="grid3"><div><h4>① 老師教什麼</h4><p>近拍老師拖入綠旗與藍色移動積木，再按綠旗：「接上這個積木，小貓就會往右走。」</p></div><div><h4>② 孩子怎麼做</h4><p>從側上方拍手指拖積木、調整順序、按綠旗；孩子試不同數值時，可各拍一段。</p></div><div><h4>③ 最後做出什麼</h4><p>讓動畫從頭播放一次，例如小貓走過來、說 Hello、另一個角色回應或換場景。</p></div></div><div class="flow"><b>拍攝順序：</b>示範移動 → 孩子排列積木 → 動畫播放<br><span class="muted">避開平板反光；操作後移開手指，讓觀眾看清結果。</span></div></div></details>
 <details data-course="octostudio" ><summary><span>OctoStudio<small>把身體動作，接到畫面反應</small></span></summary><div class="course-body"><div class="grid3"><div><h4>① 老師教什麼</h4><p>示範課堂設定好的搖晃或傾斜事件：「今天讓平板搖一搖，角色就會跳舞。」拍到動作與畫面變化。</p></div><div><h4>② 孩子怎麼做</h4><p>拍孩子設定事件與動作，再拿起平板測試。從側前方同時拍到手、裝置與螢幕。</p></div><div><h4>③ 最後做出什麼</h4><p>完整收一段「搖一搖 → 角色跳舞」，或「傾斜 → 角色移動」，依實際程式呈現。</p></div></div><div class="flow"><b>拍攝順序：</b>示範互動 → 孩子設定並測試 → 動作觸發效果<br><span class="muted">先確認裝置功能可正常執行，再拍一個清楚、穩定的互動。</span></div></div></details></div><noscript><p>可直接展開各課程查看完整指引；互動篩選與清單儲存需要 JavaScript。</p></noscript></section></div>
 <div class="wrap">
-<section id="delivery" style="padding-top:0"><div class="two-col"><div><span class="eyebrow">素材交接</span><h2>附上一句話，剪輯更有方向。</h2><p class="muted">資料夾用日期、學校、課程與班級命名。每段影片標出「教學／操作／成果」。</p><p class="code">20260924_學校_Minecraft_班級<br>Minecraft_Agent蓋房_01教學.mp4</p><p><a href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer">上傳短影片（Google Drive）↗</a></p></div><div><label for="handoff"><b>可直接複製給剪輯人員</b></label><textarea id="handoff" class="copy-area" readonly>日期／學校／班級：
-課程與今天的任務：
-老師教的方法：
-孩子做了哪些操作：
-最後完成的成果：
-問題與修正（如有）：
-素材資料夾連結：
-學生影像使用範圍：</textarea></div></div></section></div>
+<section id="delivery" style="padding-top:0"><div class="two-col"><div><span class="eyebrow">素材提交資訊</span><h2>提交素材時，附上基本資訊。</h2><p class="muted">資料夾用日期、學校、課程與班級命名；影片檔名標出「教學／操作／成果」，方便後續整理與剪輯。</p><p class="code">20260924_學校_Minecraft_班級<br>Minecraft_Agent蓋房_01教學.mp4</p><p><a href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer">上傳短影片（Google Drive）↗</a></p></div><div><label for="handoff"><b>素材提交資訊</b></label><textarea id="handoff" class="copy-area" readonly>日期／學校／班級：
+課程：
+今日任務：
+素材資料夾連結：</textarea></div></div></section></div>
 </main>
 <footer><div class="wrap footer-inner"><span>社團法人台灣資訊教育發展協會製作</span><a href="#top">回到頂部 ↑</a></div></footer>
 <dialog id="quick" aria-labelledby="quick-heading"><div class="quick-title"><h2 id="quick-heading">老師手機拍攝清單</h2><button class="close" id="close-quick" aria-label="關閉手機一頁版">×</button></div><p class="small">手機直式拍攝｜每堂課 3–5 段｜每段不超過 20 秒</p><div class="quick-lines">
 <p>□ <strong>拍攝設定</strong>　直式 9:16・1080p</p><p>□ <strong>老師教什麼</strong>　拍示範與今天的重點</p><p>□ <strong>孩子怎麼做</strong>　手＋螢幕／教材</p><p>□ <strong>關鍵動作</strong>　拖積木、選圖、按執行</p><p>□ <strong>思考過程</strong>　嘗試、討論、修改</p><p>□ <strong>最後做出什麼</strong>　運作、回答、完成</p><p>□ <strong>回放確認</strong>　畫面清楚、聲音可辨</p><p>□ <strong>原始檔交接</strong>　附課名、任務與成果</p></div>
-<p class="quick-foot">建議：教學 2 段＋操作 3 段＋成果 1 段起<br>拍穩、動作前後留 1 秒；不加音樂／字幕。<br></p></dialog>
+<p class="quick-foot">至少拍到：教學 1 段＋操作 1 段＋成果 1 段；整堂課 3–5 段即可。<br>拍穩、動作前後留 1 秒；不加音樂／字幕。<br></p></dialog>
 <script>
 (() => {
 const key='short-video-checklist-v1', checks=[...document.querySelectorAll('[data-check]')];
