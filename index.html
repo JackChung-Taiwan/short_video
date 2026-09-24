@@ -101,6 +101,492 @@ nav a.nav-priority{background:#111;color:#ffd761;border-color:#111}
 .example-video p{margin:12px 0 0;font-size:16px;text-align:center}
 @media(max-width:900px){.hero.hero-focus{grid-template-columns:1fr;gap:24px}.example-video{max-width:280px;justify-self:center;margin-bottom:8px}}
 @media print{.hero.hero-focus{display:block}.example-video{display:none}}
+
+/* 2026-09-24 Teacher-manual visual refinement
+   Keep the yellow/green identity, but reduce generic landing-page/card styling. */
+body{
+  background:#fffdf8;
+  color:#181818;
+}
+.wrap{width:min(1080px,92vw)}
+header{background:rgba(255,253,248,.98)}
+.bar{min-height:70px}
+.mark{
+  width:34px;height:34px;border-radius:7px;
+  background:#111;color:#ffd761;
+}
+.brand{letter-spacing:.01em}
+nav{gap:18px}
+nav a{
+  padding:7px 0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#2a2a2a;
+}
+nav a:hover{
+  background:transparent;
+  color:#08764f;
+  box-shadow:inset 0 -2px 0 #ffc400;
+}
+nav a.nav-priority{
+  background:transparent;
+  color:#111;
+  border:0;
+  box-shadow:inset 0 -3px 0 #ffc400;
+}
+
+.hero.hero-focus{
+  padding:54px 0 44px;
+  grid-template-columns:minmax(0,1fr) 260px;
+  gap:56px;
+  align-items:start;
+}
+.hero-focus h1{
+  font-size:clamp(38px,5vw,58px);
+  line-height:1.22;
+  margin:0 0 20px;
+}
+.hero-focus .lead{
+  max-width:680px;
+  font-size:21px;
+  line-height:1.85;
+  color:#333;
+}
+.capture-specs{
+  display:block;
+  margin:24px 0 0;
+  padding:14px 0;
+  border-top:1px solid #dfd5bb;
+  border-bottom:1px solid #dfd5bb;
+  font-size:16px;
+  font-weight:700;
+  color:#3d3d3d;
+}
+.capture-specs span{
+  display:inline;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:16px;
+}
+.capture-specs span+span:before{
+  content:" ／ ";
+  color:#a88929;
+  padding:0 8px;
+}
+.actions{margin-top:24px;gap:10px}
+.button{
+  min-height:48px;
+  border-radius:8px;
+  padding:9px 17px;
+  font-size:16px;
+  border-width:1px;
+  box-shadow:none;
+}
+.button.secondary{
+  background:#ffe18a;
+  border-color:#d6af34;
+}
+.button.database-link{
+  background:#eef9f4;
+  border-color:#8bbba7;
+}
+.example-video{
+  padding:14px;
+  border:1px solid #d8d0bd;
+  border-radius:12px;
+  box-shadow:none;
+  background:#fff;
+}
+.example-video h2{
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:18px;
+  margin:0 0 10px;
+}
+.video-frame{border-radius:8px}
+.example-video p{
+  font-size:14px;
+  text-align:left;
+  color:#555;
+}
+
+section{
+  padding:56px 0;
+  border-top:1px solid #ece5d6;
+}
+#checklist{padding-top:48px}
+.section-head{
+  align-items:start;
+  margin-bottom:30px;
+}
+.section-head h2{margin:10px 0 8px}
+.section-head p{
+  max-width:720px;
+  font-size:18px;
+}
+.eyebrow{
+  display:block;
+  width:auto;
+  padding:0 0 0 11px;
+  border-left:4px solid #ffc400;
+  border-radius:0;
+  background:transparent;
+  color:#08764f;
+  font-size:14px;
+  letter-spacing:.04em;
+  line-height:1.5;
+}
+h2{
+  font-size:clamp(30px,3.2vw,40px);
+  line-height:1.4;
+}
+h3{
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:24px;
+  font-weight:800;
+}
+h4{
+  font-size:20px;
+  font-weight:800;
+}
+
+.two-col{gap:44px}
+#checklist .check-card{
+  padding:24px 26px;
+  border:1px solid #d8d0bd;
+  border-top:5px solid #ffc400;
+  border-radius:10px;
+  box-shadow:none;
+}
+.check-header h3{font-family:'Noto Sans TC',sans-serif}
+progress{height:7px;margin:18px 0}
+.check{
+  padding:12px 0;
+  min-height:0;
+  font-size:18px;
+  border-bottom:1px solid #eee8dc;
+}
+.check:last-child{border-bottom:0}
+
+.rule{
+  position:relative;
+  display:grid;
+  grid-template-columns:46px 1fr;
+  gap:10px;
+  margin:0;
+  padding:15px 0;
+  border:0;
+  border-bottom:1px solid #e7dfcf;
+  border-radius:0;
+  background:transparent;
+}
+.rule:first-child{padding-top:0}
+.rule:last-child{border-bottom:0}
+.rule>b{
+  display:block;
+  width:auto;height:auto;
+  border-radius:0;
+  background:transparent;
+  color:#b8400b;
+  font-size:15px;
+  font-weight:900;
+  line-height:1.8;
+}
+.rule strong{
+  font-size:19px;
+  line-height:1.55;
+}
+.rule p{
+  font-size:17px;
+  line-height:1.75;
+  margin:3px 0 0;
+}
+
+.grid3{gap:0}
+#method .grid3{
+  border-top:1px solid #dcd3c1;
+  border-bottom:1px solid #dcd3c1;
+}
+.card{
+  min-height:100%;
+  padding:28px 30px;
+  border:0;
+  border-right:1px solid #e6decf;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.card:last-child{border-right:0}
+.step{
+  display:block;
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  color:#08764f;
+  font-size:14px;
+  letter-spacing:.04em;
+}
+.card h3{margin:7px 0 8px}
+.pill{
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  color:#777;
+  font-size:14px;
+  font-weight:600;
+}
+.card ul{
+  padding-left:20px;
+  margin:18px 0 8px;
+}
+.card li{
+  margin:12px 0;
+  font-size:17px;
+  line-height:1.8;
+}
+.card .small{font-size:15px}
+
+.band{
+  background:#fff8df;
+  border-block:1px solid #ead9aa;
+}
+#courses{border-top:0}
+.filters{
+  gap:22px;
+  border-bottom:1px solid #d8cda8;
+  margin-bottom:22px;
+}
+.filter{
+  min-height:42px;
+  padding:8px 0 9px;
+  border:0;
+  border-bottom:3px solid transparent;
+  border-radius:0;
+  background:transparent;
+  font-size:16px;
+}
+.filter:hover{border-color:#d8b43c}
+.filter[aria-pressed="true"]{
+  background:transparent;
+  color:#111;
+  border-color:#111;
+}
+details{
+  margin:0;
+  border:0;
+  border-bottom:1px solid #ddcf9f;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+details:first-of-type{border-top:1px solid #ddcf9f}
+summary{
+  padding:20px 4px;
+  font-size:22px;
+}
+summary:after{
+  font-size:25px;
+  font-weight:400;
+}
+summary small{
+  font-size:15px;
+  margin-top:2px;
+  color:#575757;
+}
+.course-body{
+  padding:0 4px 28px;
+}
+.course-body .grid3{
+  padding-top:22px;
+  border-top:1px solid #e1d6b2;
+  gap:0;
+}
+.course-body .grid3>div{
+  padding:0 24px;
+  border-right:1px solid #e6dcbf;
+}
+.course-body .grid3>div:first-child{padding-left:0}
+.course-body .grid3>div:last-child{
+  padding-right:0;
+  border-right:0;
+}
+.course-body p{
+  font-size:17px;
+  line-height:1.75;
+}
+.flow{
+  margin-top:22px;
+  padding:14px 16px;
+  border-left:4px solid #0f9f6e;
+  border-radius:4px;
+  background:#f0faf5;
+  font-size:16px;
+  line-height:1.75;
+}
+
+#delivery{
+  padding-top:56px !important;
+}
+#delivery .two-col{
+  gap:56px;
+}
+.code{
+  padding:14px 16px;
+  border-left:4px solid #0f9f6e;
+  border-radius:4px;
+  background:#f0faf5;
+  font-size:15px;
+}
+.copy-area{
+  min-height:305px;
+  padding:16px;
+  border:1px solid #d7cfbd;
+  border-radius:6px;
+  box-shadow:none;
+  background:#fff;
+  font-size:17px;
+}
+
+footer{padding:28px 0}
+dialog{
+  border:1px solid #222;
+  border-radius:10px;
+  background:#fffdf8;
+}
+.close{border-radius:6px}
+
+@media(max-width:900px){
+  .hero.hero-focus{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .example-video{
+    max-width:260px;
+    justify-self:start;
+  }
+  #method .grid3{display:block}
+  .card{
+    padding:24px 0;
+    border-right:0;
+    border-bottom:1px solid #e6decf;
+  }
+  .card:last-child{border-bottom:0}
+  .course-body .grid3{display:block}
+  .course-body .grid3>div{
+    padding:18px 0;
+    border-right:0;
+    border-bottom:1px solid #e6dcbf;
+  }
+  .course-body .grid3>div:last-child{border-bottom:0}
+}
+
+@media(max-width:600px){
+  .wrap{width:calc(100% - 30px)}
+  header{position:static}
+  .bar{padding:12px 0}
+  nav{
+    gap:14px;
+    overflow-x:auto;
+    padding:4px 0 2px;
+  }
+  nav a{
+    font-size:14px;
+    flex:0 0 auto;
+  }
+  .hero.hero-focus{
+    padding:32px 0 28px;
+    gap:24px;
+  }
+  .hero-focus h1{
+    font-size:34px;
+    margin-bottom:14px;
+  }
+  .hero-focus .lead{
+    font-size:18px;
+    line-height:1.75;
+  }
+  .capture-specs{
+    font-size:14px;
+    line-height:1.8;
+    padding:10px 0;
+  }
+  .capture-specs span{font-size:14px}
+  .capture-specs span+span:before{
+    content:"";
+    display:block;
+    padding:0;
+  }
+  .hero-focus .actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .actions .button{
+    width:100%;
+    min-height:46px;
+  }
+  .example-video{
+    max-width:230px;
+    margin:0;
+    padding:10px;
+  }
+  section{
+    padding:38px 0;
+  }
+  #checklist{padding-top:36px}
+  .section-head{
+    margin-bottom:22px;
+  }
+  .section-head .button{
+    width:100%;
+    margin-top:12px;
+  }
+  h2{font-size:28px}
+  .two-col{gap:28px}
+  #checklist .check-card{
+    padding:18px;
+    margin:0;
+  }
+  .check{font-size:16px}
+  .rule{
+    grid-template-columns:38px 1fr;
+    padding:13px 0;
+  }
+  .rule strong{font-size:18px}
+  .rule p{font-size:16px}
+  .filters{
+    gap:18px;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    margin-bottom:16px;
+  }
+  .filter{
+    flex:0 0 auto;
+    font-size:14px;
+  }
+  summary{
+    padding:17px 2px;
+    font-size:20px;
+  }
+  summary small{font-size:14px}
+  .course-body{padding:0 2px 22px}
+  .course-body .grid3>div{padding:15px 0}
+  .course-body p{font-size:16px}
+  .flow{
+    font-size:15px;
+    padding:12px 13px;
+  }
+  #delivery{padding-top:38px !important}
+  #delivery .two-col{gap:30px}
+  .copy-area{
+    min-height:285px;
+    font-size:15px;
+  }
+  footer{font-size:14px}
+}
+
 </style></head>
 <body><a class="skip" href="#main">跳到主要內容</a>
 <header><div class="wrap bar"><a class="brand" href="#top"><span class="mark" aria-hidden="true">▶</span>協會老師・短影音手冊</a><nav aria-label="主要導覽"><a class="nav-priority" href="#checklist">★ 老師拍攝清單</a><a href="#method">拍攝方法</a><a href="#courses">課程範例</a><a href="https://drive.google.com/drive/folders/18Q0mQv4rUeP0g38lE2GswE1fXB23Qo-7?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="短影片資料庫（另開分頁）">短影片資料庫 ↗</a></nav></div></header>
